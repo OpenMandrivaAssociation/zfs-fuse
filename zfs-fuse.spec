@@ -12,7 +12,7 @@ Source2:	http://www.sun.com/bigadmin/scripts/sunScripts/zfs_completion.bash.txt
 # Patch1:		zfs-fuse-0.4.0_beta1-daemon.patch
 # Packager:	Chris Hills <chaz@chaz6.com>
 BuildRoot: %{_tmppath}/%{name}-root
-BuildRequires: gcc-c++ fuse-devel scons libaio-devel
+BuildRequires: gcc-c++ fuse-devel scons libaio-devel zlib-devel
 Requires:      fuse
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
