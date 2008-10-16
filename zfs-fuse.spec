@@ -1,6 +1,6 @@
 Name:		zfs-fuse
 Version:	0.5.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary: 	ZFS file system support for FUSE
 License:	CDDL
 Group:		System/Libraries
@@ -8,6 +8,8 @@ URL:		http://www.wizy.org/wiki/ZFS_on_FUSE
 Source0:	http://download.berlios.de/%name/%name-%version.tar.bz2
 Source1:	%name.init
 Source2:	http://www.sun.com/bigadmin/scripts/sunScripts/zfs_completion.bash.txt
+Source3:	zfs.1m
+Source4:	zpool.1m
 # Patch0:		zfs-fuse-0.4.0_beta1-gcc4.2.patch
 # Patch1:		zfs-fuse-0.4.0_beta1-daemon.patch
 # Packager:	Chris Hills <chaz@chaz6.com>
@@ -37,6 +39,9 @@ mkdir -p -m 0755 %{buildroot}/%{_initrddir}
 install -m 0755 %SOURCE1 %{buildroot}/%{_initrddir}/%name
 mkdir -p -m 0755 %{buildroot}/%{_sysconfdir}/bash_completion.d
 install -m 0644 %SOURCE2 %{buildroot}/%{_sysconfdir}/bash_completion.d/%name
+mkdir -p -m 0755 %{buildroot}/%{_mandir}/man1
+install -m 0644 %SOURCE3 %{buildroot}/%{_mandir}/man1/zfs.1
+install -m 0644 %SOURCE4 %{buildroot}/%{_mandir}/man1/zpool.1
 
 %clean
 rm -rf %{buildroot}
@@ -46,6 +51,7 @@ rm -rf %{buildroot}
 %attr(0755,root,root) %_sbindir/*
 %attr(0755,root,root) %config(noreplace) %{_initrddir}/%name
 %config(noreplace) %{_sysconfdir}/bash_completion.d/%name
+%{_mandir}/*/*
 %doc BUGS CHANGES HACKING INSTALL LICENSE README STATUS TESTING TODO
 
 %preun
