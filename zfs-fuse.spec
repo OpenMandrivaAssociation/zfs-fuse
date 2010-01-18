@@ -1,11 +1,11 @@
 Name:		zfs-fuse
-Version:	0.5.0
-Release:	%mkrel 4
+Version:	0.6.0
+Release:	%mkrel 1
 Summary: 	ZFS file system support for FUSE
 License:	CDDL
 Group:		System/Libraries
-URL:		http://www.wizy.org/wiki/ZFS_on_FUSE
-Source0:	http://download.berlios.de/%name/%name-%version.tar.bz2
+URL:		http://zfs-fuse.net
+Source0:	http://zfs-fuse.net/releases/%{version}/%{name}-%{version}.tar.bz2
 Source1:	%name.init
 Source2:	http://www.sun.com/bigadmin/scripts/sunScripts/zfs_completion.bash.txt
 Source3:	zfs.1m
