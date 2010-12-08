@@ -1,6 +1,6 @@
 Name:		zfs-fuse
 Version:	0.6.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary: 	ZFS file system support for FUSE
 License:	CDDL
 Group:		System/Libraries
