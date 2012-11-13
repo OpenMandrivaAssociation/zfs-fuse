@@ -1,0 +1,7 @@
+sources:
+  "zdb.1m:"	6fbfa3cac53e0c0c3afaaf5276efca16ac2bb8be
+  "zfs.1m:"	c47aa6efb0b30c7c36c2c22bb48e0487aad35ba3
+  "zfs_completion.bash.txt:"	f2193f85d5f1bc953ed15cc76acf4267bce19b39
+  "zfs-fuse-0.6.0.tar.bz2:"	508cf7c5d0aaf1adc11af2ea48aefd7bcaef3081
+  "zfs-fuse.init:"	30bb67b767916468fce1f900a1bf353efbed4d46
+  "zpool.1m:"	e1deeb0f3eabc024bb11edab7a1cbe940de08601
