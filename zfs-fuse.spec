@@ -4,7 +4,7 @@ Release:	3
 Summary: 	ZFS file system support for FUSE
 License:	CDDL
 Group:		System/Libraries
-URL:		http://zfs-fuse.net
+URL:		https://zfs-fuse.net
 Source0:	http://zfs-fuse.net/releases/%{version}/%{name}-%{version}.tar.bz2
 Source1:	%name.init
 Source2:	http://www.sun.com/bigadmin/scripts/sunScripts/zfs_completion.bash.txt
